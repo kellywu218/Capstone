@@ -1,4 +1,12 @@
-# Capstone
-# capstone
-# capstone
-# capstone
+# Predicting Blood Pressure Based on Diet
+By: [Kelly Wu](https://www.linkedin.com/in/kelly-wu-nj/)
+
+## Problem Statement
+
+We have all gone to the doctor at least once in our life and went through the basic health checks: height, weight, temperature, and blood pressure. We're all familiar with the process of having our arm squeezed tightly by a cuff while a our doctor listens in with his or her stethoscope and watches the little monitor intently. Then we all hope to never hear that we have high blood pressure. High blood pressure, also known as a "silent killer," normally doesn't induce any health symptoms, but can lead to a heart attack or stroke. What's worse is that hypertension is so common that it is a leading risk for death and disability worldwide (Dr. Paul Whelton, an expert in hypertension and kidney disease at Tulane University). 
+
+What is blood pressure? Blood pressure is given as two numbers. The first number represents the pressure in your blood vessels as the heart beats (systolic pressure). The second is the pressure as your heart relaxes and fills with blood (diastolic pressure). Normal blood pressure is considered to be 120/80 or lower, while high blood pressure is considered to be 140/90 or higher. So what affects blood pressure? There are numerous factors that can affect blood pressure and it's normal for it to fluctuate throughout the day. The time of day, the foods you eat, and stress are a few contributors to blood pressure. 
+
+Food is essential to life, but majority of the population simply eat what's good to them or what's convenient. There aren't many people who actually go through the trouble of calculating the necessary macronutrients needed on a daily basis. Culture also has another factor that affects diet where maybe certain foods like rice is the primary carbohydrate versus pasta in another culture. With such differences in diet and diet being a factor that affects blood pressure, can we predict blood pressure simply based on what we eat? Maybe our predictions will cause us to rethink what we eat or put more consideration into eating more variety. 
+
+After our regression modeling, we can refer to our $R^2$ scores to determine model accuracy. Once we can determine any relationships and correlations between diet and basic health knowledge such as height and weight and blood pressure. Our goal is to help nutritionists better assist their clients as well as allow the typical layman to determine their risk for high blood pressure without the hassle of going to a physician or spending money to purchase at at home blood pressure machine. 
