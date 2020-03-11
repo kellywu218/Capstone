@@ -36,9 +36,37 @@ Afterwards, we dived into the modeling component where we had to work with 6 var
 
 At the end of our findings, we realized that there could be a classification method in determining the class of someone's blood pressure and risk for hypertension. Unfortunately, given our data set we didn't have the minimum number of two classes to utilize the classification approach as all our individuals had normal blood pressures. 
 
+Similarly, while the model is overfit, this model yields like results to our Gradient Boost as we can see from the $R^2$ scores, 61.91% of the variance can be explained by the model regarding the training set and 38.19% of the variance for the testing set. In addition, from the RMSE scores it also proves to be better than our baseline and other models. 
+
 ## Conclusion
 
-Through our various models and based on our metrics, our best model turned out to be the Voting Regressor model. While the testing scores were very similar to the Gradient Boosting model, we determined the Voting Regressor to be our best choice as it is constructed with the Gradient Boost and other models as well. It was better fit on our training data and still managed to produce very similar results on our testing data. For our diastolic predictions, the Voting Regressor model had 52.98% of variance explained by the model for the training set, and 30.02% of variance explained by model based on the $R^2$ scores. In addition, the RMSE scores prove to be significantly better than our baseline and other models as well at 9.22 for our training set and 11.83 for our testing set.
+|_Diastolic_ Model|Training $R^2$ Score|Testing $R^2$ Score|Training RMSE Score|Testing RMSE Score|
+|---|---|---|---|---|
+|Linear|20.93|21.89|11.96|12.49|
+|Lasso|20.89|21.8|11.96|12.5|
+|Ridge|20.93|21.89|11.96|12.49|
+|Elastic Net|20.85|21.75|11.96|12.50|
+|Decision Tree|1.0|-0.34|0.0|16.36|
+|Bagged Decision Tree|85.7|21.19|5.08|12.55|
+|Random Forest|85.56|20.95|5.11|12.57|
+|Adaptive Boost|22.06|20.00|11.87|12.64|
+|Gradient Boost|41.15|30.13|10.31|11.82|
+|Voting Regressor|52.98|30.02|9.22|11.83|
+
+|_Systolic_ Model|Training $R^2$ Score|Testing $R^2$ Score|Training RMSE Score|Testing RMSE Score|
+|---|---|---|---|---|
+|Linear|38.49|36.02|13.39|13.84|
+|Lasso|38.32|36.01|13.41|13.84|
+|Ridge|38.49|36.03|13.39|13.84|
+|Elastic Net|38.45|36.04|13.39|13.84|
+|Decision Tree|1.0|-0.29|0.0|19.68|
+|Bagged Decision Tree|87.89|32.23|5.94|14.24|
+|Random Forest|87.95|31.45|5.93|14.33|
+|Adaptive Boost|32.91|24.53|13.99|15.03|
+|Gradient Boost|51.15|37.68|11.94|13.66|
+|Voting Regressor|61.91|38.19|10.54|13.6|
+
+Through our various models and based on our metrics, our best model turned out to be the Voting Regressor model. While the testing scores were very similar to the Gradient Boosting model, we determined the Voting Regressor to be our best choice as it is constructed with the Gradient Boost and other models as well. It was better fit on our training data and still managed to produce very similar results on our testing data. For our diastolic predictions, the Voting Regressor model had 52.98% of variance explained by the model for the training set, and 30.02% of variance explained by model based on the $R^2$ scores. In addition, the RMSE scores prove to be significantly better than our baseline and other models as well at 9.22 for our training set and 11.83 for our testing set. Furthermore, we can see from our systolic predictions that the Voting Regressor also performs the best. Overall, while diet may not be our best predictor in determining blood pressure, there could be other factors that better our model's accuracy. 
 
 ## Recommendations 
 
